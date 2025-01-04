@@ -1,1 +1,14 @@
-# Feature-Importance
+### How to run it on your own machine
+
+1. Install the requirements
+
+   ```
+   $ pip install -r requirements.txt
+   ```
+
+2. Run the app
+
+   ```
+   $ streamlit run streamlit_app.py
+   ```
+Achtung: Datensätze müssen momentan noch lokal vorhanden sein, da sie zu groß für Github sind
