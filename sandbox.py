@@ -22,7 +22,7 @@ alter = st.sidebar.slider('Wähle dein Alter:', 0, 100, 25)
 st.write(f'Hallo {name}, willkommen in deiner ersten Streamlit App!')
 
 # Tabs erstellen
-tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs(['Daten', 'Chart', 'Über', 'Bruh', 'what', 'ehm', 'ok'])
+tab1, tab2, tab3, tab4, tab5, tab6, tab7 = st.tabs(['Daten', 'Chart', 'Über', 'Test Barplot', 'Feature Analyse', 'Spektrale Intervallanalyse', 'ok'])
 
 # Erstelle einen DataFrame mit zufälligen Daten
 df = pd.DataFrame({
@@ -65,7 +65,7 @@ def func3():
     """)
 
 def func4():
-    st.header("Bruh")
+    st.header("Test Barplot")
     fig, ax = plt.subplots()
     ax.bar(df['Datum'].dt.strftime('%Y-%m-%d'), df['Werte'])
     ax.set_xlabel('Datum')
